@@ -4,40 +4,40 @@ import { Star, Quote, ChevronRight, ChevronLeft } from 'lucide-react';
 
 const GoogleIcon = () => (
   <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
+    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
+    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
+    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
   </svg>
 );
 
 const reviews = [
   {
     id: 1,
-    name: "אבי כהן",
-    role: "יזם נדל״ן",
-    text: "הצוות היה מקצועי, ידע להדריך אותי בכל שלב בדרך לבית החלומות שלי. תשומת הלב שלהם לפרטים והמחויבות להבנת הצרכים שלי הפכו את כל התהליך לחלק ונטול לחצים.",
+    name: "אלי אסייג",
+    role: "לקוח ממליץ",
+    text: "משרד ותיק ומקצועי. קיבלתי מהם עצות טובות, אלון טיפל בי באופן מסור וכנה. הדירה הושכרה במהירות ואני ממליץ עליהם בחום.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop"
   },
   {
     id: 2,
-    name: "מיכל לוי",
-    role: "רוכשת דירה",
-    text: "שירות יוצא דופן! הם מצאו לנו את הנכס המושלם בזמן שיא. המקצועיות והשקיפות לאורך כל הדרך נתנו לנו שקט נפשי אמיתי.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
-  },
-  {
-    id: 3,
-    name: "דוד ששון",
-    role: "משקיע",
-    text: "בתור משקיע ותיק, אני יכול להגיד בלב שלם שזו אחת מסוכנויות הנדל״ן הטובות בארץ. ידע מעמיק בשוק ויכולת משא ומתן מרשימה.",
+    name: "דניאל ר.",
+    role: "רוכש דירה",
+    text: "נכנסתי למשרד שלהם בדיזנגוף וקיבלתי שירות מעולה, ישיר והגון. אלון היה ענייני, רציני ושקוף לאורך כל תהליך הקנייה. ממליץ בחום מניסיון אישי!",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop"
   },
   {
+    id: 3,
+    name: "יעל לוי",
+    role: "לקוחה",
+    text: "שירות מקצועי של שנים ניכר בכל פרט. סוד ההצלחה שלהם בעולם הנדל״ן טמון בשקיפות מרבית מול הלקוחות. זו הייתה חוויה מרגיעה מאוד עבורנו.",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
+  },
+  {
     id: 4,
-    name: "שרה גולן",
-    role: "מוכרת נכס",
-    text: "מכרנו את הבית שלנו דרכם וקיבלנו מחיר מעל המצופה. הליווי היה צמוד, אכפתי ומקצועי מאוד. ממליצה בחום!",
+    name: "שירה כהן",
+    role: "מוכרת נכס בתל אביב",
+    text: "אין ספק שהצוות של סוסייטי נכסים הוא מהמקושרים והאמינים בתל אביב. סיפקו לי תחושת ביטחון ואמינות - דבר נדיר ומוערך מאוד בתחום הנדל״ן!",
     image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop"
   }
 ];
@@ -50,24 +50,24 @@ export default function Reviews() {
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const scrollAmount = scrollRef.current.clientWidth / 1.5;
-      scrollRef.current.scrollBy({ 
-        left: direction === 'left' ? -scrollAmount : scrollAmount, 
-        behavior: 'smooth' 
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
       });
     }
   };
 
   return (
-    <section ref={ref} className="py-24 px-6 md:px-12 lg:px-24 bg-premium-gradient text-gray-900 overflow-hidden relative">
+    <section ref={ref} className="py-24 px-6 md:px-12 lg:px-24 bg-premium-gradient text-gray-900 relative">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16 items-center lg:items-start relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="lg:w-1/3 lg:sticky lg:top-24 text-center lg:text-right"
         >
-          <span className="inline-block text-sm font-semibold tracking-wide mb-3 px-4 py-1.5 rounded-full" style={{ background: "hsla(220, 20%, 7%, 0.05)", color: "hsl(220, 20%, 15%)" }}>
-            ★ ביקורות Google ★
+          <span className="inline-flex items-center gap-1 text-sm font-semibold tracking-wide mb-3 px-4 py-1.5 rounded-full" style={{ background: "hsla(220, 20%, 7%, 0.05)", color: "hsl(220, 20%, 15%)" }}>
+            <Star className="w-3.5 h-3.5 fill-current text-yellow-500" /> ביקורות Google <Star className="w-3.5 h-3.5 fill-current text-yellow-500" />
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 text-gray-900">
             מה <span className="text-accent">הלקוחות</span> אומרים
@@ -75,12 +75,12 @@ export default function Reviews() {
           <p className="mt-4 text-lg text-gray-700 mb-8">
             מאות משפחות כבר סמכו עלינו — הנה מה שהן חושבות
           </p>
-          
+
           <div className="hidden lg:flex gap-3 mt-10">
-            <button onClick={() => scroll('right')} className="w-12 h-12 rounded-full border border-gray-300 text-gray-600 flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all duration-300">
+            <button onClick={() => scroll('right')} aria-label="גלול ימינה" className="w-12 h-12 rounded-full border border-gray-300 text-gray-600 flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all duration-300 cursor-pointer">
               <ChevronRight className="w-6 h-6" />
             </button>
-            <button onClick={() => scroll('left')} className="w-12 h-12 rounded-full border border-gray-300 text-gray-600 flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all duration-300">
+            <button onClick={() => scroll('left')} aria-label="גלול שמאלה" className="w-12 h-12 rounded-full border border-gray-300 text-gray-600 flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all duration-300 cursor-pointer">
               <ChevronLeft className="w-6 h-6" />
             </button>
           </div>
@@ -89,12 +89,12 @@ export default function Reviews() {
         <div className="lg:w-2/3 relative w-full">
           <div ref={scrollRef} className="flex gap-6 overflow-x-auto hide-scrollbar pb-8 snap-x snap-mandatory px-4 md:px-0" style={{ scrollbarWidth: "none" }}>
             {reviews.map((review, index) => (
-              <motion.div 
+              <motion.div
                 key={review.id}
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: index * 0.15, duration: 0.6 }}
-                className="min-w-[300px] md:min-w-[400px] bg-white/80 backdrop-blur-xl border border-white/50 p-8 rounded-3xl snap-start shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between relative"
+                className="min-w-[300px] md:min-w-[400px] bg-white/80 backdrop-blur-xl border border-white/50 p-8 rounded-3xl snap-start shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between relative cursor-pointer"
               >
                 <Quote size={28} className="absolute top-5 left-5 opacity-10 text-accent" />
                 <div className="flex justify-between items-start mb-6">
@@ -107,7 +107,7 @@ export default function Reviews() {
                 </div>
                 <p className="text-lg leading-relaxed mb-8 text-gray-700 font-medium">"{review.text}"</p>
                 <div className="flex items-center gap-4 border-t border-gray-100 pt-6">
-                  <img src={review.image} alt={review.name} className="w-14 h-14 rounded-full object-cover border-2 border-white shadow-sm" />
+                  <img src={review.image} alt={review.name} className="w-14 h-14 rounded-full object-cover border-2 border-white shadow-sm" loading="lazy" decoding="async" />
                   <div>
                     <h4 className="font-bold text-xl text-gray-900">{review.name}</h4>
                     <p className="text-sm text-gray-500">{review.role}</p>
@@ -116,12 +116,12 @@ export default function Reviews() {
               </motion.div>
             ))}
           </div>
-          
+
           <div className="flex lg:hidden justify-center gap-4 mt-4">
-            <button onClick={() => scroll('right')} className="w-12 h-12 rounded-full border border-gray-300 text-gray-600 flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all duration-300">
+            <button onClick={() => scroll('right')} aria-label="גלול ימינה" className="w-12 h-12 rounded-full border border-gray-300 text-gray-600 flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all duration-300 cursor-pointer">
               <ChevronRight className="w-6 h-6" />
             </button>
-            <button onClick={() => scroll('left')} className="w-12 h-12 rounded-full border border-gray-300 text-gray-600 flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all duration-300">
+            <button onClick={() => scroll('left')} aria-label="גלול שמאלה" className="w-12 h-12 rounded-full border border-gray-300 text-gray-600 flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all duration-300 cursor-pointer">
               <ChevronLeft className="w-6 h-6" />
             </button>
           </div>
