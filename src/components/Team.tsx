@@ -34,7 +34,7 @@ export default function Team() {
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-50px" }}
           className="text-4xl md:text-5xl font-bold mb-4"
         >
           הכירו את הצוות
@@ -42,7 +42,7 @@ export default function Team() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-50px" }}
           transition={{ delay: 0.1 }}
           className="text-gray-500 max-w-2xl mx-auto text-lg"
         >
@@ -56,8 +56,8 @@ export default function Team() {
             key={member.id}
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.1, duration: 0.5 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ delay: index * 0.1, duration: 0.3, ease: "easeOut" }}
             className="group"
           >
             <div className="relative overflow-hidden rounded-3xl aspect-[3/4] mb-4">

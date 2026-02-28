@@ -30,7 +30,7 @@ export default function FAQ() {
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-50px" }}
           className="text-4xl md:text-5xl font-bold mb-4"
         >
           שאלות ותשובות נפוצות
@@ -38,8 +38,7 @@ export default function FAQ() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
+          viewport={{ once: true, margin: "-50px" }}
           className="text-gray-500"
         >
           ריכזנו עבורכם את השאלות הנפוצות ביותר. לא מצאתם תשובה? צרו קשר.
@@ -52,8 +51,8 @@ export default function FAQ() {
             key={index}
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.1 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ delay: index * 0.1, duration: 0.4, ease: "easeOut" }}
             className="border-b border-gray-200 pb-4"
           >
             <button

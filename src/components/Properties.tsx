@@ -41,7 +41,7 @@ export default function Properties() {
   const [activeFilter, setActiveFilter] = useState("הכל");
   const scrollRef = useRef<HTMLDivElement>(null);
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-100px" });
+  const inView = useInView(ref, { once: true, margin: "-50px" });
 
   const filtered = activeFilter === "הכל" ? allProperties : allProperties.filter((p) => p.type === activeFilter);
 
@@ -56,7 +56,7 @@ export default function Properties() {
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
         className="max-w-7xl mx-auto"
       >
         <span className="text-accent font-bold tracking-wider uppercase text-sm mb-2 block">הנכסים שלנו</span>
@@ -93,7 +93,7 @@ export default function Properties() {
               key={property.id}
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: i * 0.15 }}
+              transition={{ duration: 0.4, delay: i * 0.1, ease: "easeOut" }}
               className="min-w-[340px] md:min-w-[380px] group"
             >
               <div className="rounded-[2rem] overflow-hidden bg-white/90 backdrop-blur-sm border border-white hover:border-accent/30 transition-all duration-500 hover:shadow-xl hover:shadow-accent/10">

@@ -45,7 +45,7 @@ const reviews = [
 export default function Reviews() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-100px" });
+  const inView = useInView(ref, { once: true, margin: "-50px" });
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -63,7 +63,7 @@ export default function Reviews() {
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           className="lg:w-1/3 lg:sticky lg:top-24 text-center lg:text-right"
         >
           <span className="inline-flex items-center gap-1 text-sm font-semibold tracking-wide mb-3 px-4 py-1.5 rounded-full" style={{ background: "hsla(220, 20%, 7%, 0.05)", color: "hsl(220, 20%, 15%)" }}>
@@ -93,7 +93,7 @@ export default function Reviews() {
                 key={review.id}
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: index * 0.15, duration: 0.6 }}
+                transition={{ delay: index * 0.1, duration: 0.4, ease: "easeOut" }}
                 className="min-w-[300px] md:min-w-[400px] bg-white/80 backdrop-blur-xl border border-white/50 p-8 rounded-3xl snap-start shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between relative cursor-pointer"
               >
                 <Quote size={28} className="absolute top-5 left-5 opacity-10 text-accent" />

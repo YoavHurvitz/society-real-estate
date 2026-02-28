@@ -66,7 +66,7 @@ export default function Hero() {
           <motion.h1
             initial={{ opacity: 0, y: 30, textShadow: "0px 0px 0px rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0)" }}
             animate={{ opacity: 1, y: 0, textShadow: "0px 0px 40px rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.3)" }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
             className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.15] md:leading-[1.1] tracking-tight drop-shadow-lg"
           >
             הבית הבא <br className="hidden md:block" /> שלכם מתחיל <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-[#4CAF50]">כאן</span>
@@ -75,7 +75,7 @@ export default function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
             className="text-lg md:text-xl text-gray-200 max-w-2xl font-normal drop-shadow-md leading-relaxed md:leading-relaxed"
           >
             סוסייטי נכסים – משרד התיווך המוביל בתל אביב. עם למעלה מ-40 שנות מצוינות, אמינות וליווי אישי, אנחנו כאן כדי למצוא עבורכם את הנכס המושלם במרכז וצפון העיר.
@@ -84,7 +84,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
             className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-2 w-full"
           >
             <a
@@ -129,7 +129,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
             className="flex flex-col items-center"
           >
             <Users className="w-5 h-5 md:w-6 md:h-6 text-white/80 mb-2 md:mb-3" />
@@ -142,7 +142,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
+            transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
             className="flex flex-col items-center"
           >
             <Building2 className="w-5 h-5 md:w-6 md:h-6 text-white/80 mb-2 md:mb-3" />
@@ -155,7 +155,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
+            transition={{ duration: 0.5, delay: 0.6, ease: "easeOut" }}
             className="flex flex-col items-center"
           >
             <Award className="w-5 h-5 md:w-6 md:h-6 text-white/80 mb-2 md:mb-3" />
@@ -171,15 +171,15 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: false, amount: 0.5 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true, margin: "-50px" }}
         className="relative z-10 w-full bg-black/40 backdrop-blur-md border-t border-white/5 py-4 md:py-6 mt-8 md:mt-12"
       >
         <motion.div
           initial={{ opacity: 0.5, filter: "grayscale(100%)" }}
           whileInView={{ opacity: 1, filter: "grayscale(0%)" }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, margin: "-50px" }}
           className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 hover:opacity-100 hover:filter-none transition-all duration-500"
         >
           <span className="text-white/60 text-xs md:text-sm font-bold uppercase tracking-widest text-center">מסוקר ב:</span>

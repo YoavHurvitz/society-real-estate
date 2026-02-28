@@ -24,8 +24,8 @@ export default function AboutUs() {
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
           className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-2 rounded-full text-accent font-bold tracking-wider mb-8 shadow-2xl"
         >
           <Award className="w-5 h-5" />
@@ -36,8 +36,8 @@ export default function AboutUs() {
         <motion.h2
           initial={{ opacity: 0, y: 20, textShadow: "0px 0px 0px rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0)" }}
           whileInView={{ opacity: 1, y: 0, textShadow: "0px 0px 40px rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.4)" }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.2 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
           className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-8"
         >
           בדיוק מה שחיפשתם <br />
@@ -49,8 +49,8 @@ export default function AboutUs() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
           className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-3xl mb-12 drop-shadow-md font-light"
         >
           מאז שנת 1983, סוסייטי נכסים בהנהלת אלון דהאן מציעה לכם את שירותי התיווך והנדל״ן המובילים בתל אביב, היישר ממשרדינו ברחוב דיזנגוף. צוות הסוכנים המסור שלנו דוגל בשקיפות מלאה, מקצועיות ללא פשרות ואמינות המבטיחה לכם עסקאות בטוחות ומשתלמות במיוחד.
@@ -59,8 +59,8 @@ export default function AboutUs() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
         >
           <button className="bg-transparent border border-white/30 text-white px-10 py-4 rounded-full font-medium text-lg hover:bg-white hover:text-black transition-all duration-300 cursor-pointer">
             קראו עוד עלינו

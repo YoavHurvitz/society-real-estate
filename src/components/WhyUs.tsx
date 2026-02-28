@@ -44,7 +44,7 @@ export default function WhyUs() {
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
         className="text-center mb-16"
       >
         <span className="text-accent font-bold tracking-wider uppercase text-sm mb-4 block">
@@ -61,7 +61,7 @@ export default function WhyUs() {
             key={i}
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
+            transition={{ duration: 0.4, delay: i * 0.1, ease: "easeOut" }}
             className="bg-white border border-gray-100 rounded-2xl p-6 flex gap-4 hover:border-accent/30 transition-all duration-500 hover:shadow-xl hover:shadow-accent/10 group cursor-pointer"
           >
             <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-accent transition-colors duration-500">
@@ -79,7 +79,7 @@ export default function WhyUs() {
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 30 }}
         animate={inView ? { opacity: 1, scale: 1, y: 0 } : {}}
-        transition={{ duration: 0.6, delay: 0.7 }}
+        transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
         className="max-w-5xl mx-auto mt-16 md:mt-24 rounded-3xl relative overflow-hidden bg-gray-900 shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
       >
         <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 z-0"></div>

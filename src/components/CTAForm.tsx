@@ -27,8 +27,8 @@ export default function CTAForm({ id }: CTAFormProps) {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
           className="text-center mb-10"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight">איך סוסייטי נכסים תוכל לעזור לכם?</h2>
@@ -37,8 +37,8 @@ export default function CTAForm({ id }: CTAFormProps) {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           className="bg-white/80 backdrop-blur-xl rounded-[2rem] p-3 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-white"
         >
           <div className="flex flex-row justify-between md:grid md:grid-cols-3 gap-2 md:gap-4">

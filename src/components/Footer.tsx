@@ -21,7 +21,8 @@ export default function Footer() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="max-w-2xl"
           >
             <h2 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
@@ -35,7 +36,8 @@ export default function Footer() {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
             className="text-right flex flex-col gap-4"
           >
             <div className="flex items-center justify-end gap-3 text-white/80 hover:text-white transition-colors">
