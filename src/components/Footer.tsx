@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="w-full">
+    <footer id="contact" className="w-full">
       <div className="relative bg-gray-900 pt-24 pb-12 px-8 md:px-16 lg:px-24">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
@@ -26,10 +26,10 @@ export default function Footer() {
             className="max-w-2xl"
           >
             <h2 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
-              תיווך מקצועי <br /> בלב תל אביב
+              תיווך ויזום נדל״ן <br /> בתל אביב והסביבה
             </h2>
             <p className="text-white/70 text-lg max-w-md">
-              מאז 1983 אנו מספקים חווית שירות בוטיק מותאמת אישית לצרכים שלכם, ושמים דגש על אמינות ושקיפות במרכז וצפון תל אביב.
+              משרד יעקובסון נכסים משווק נכסים פרטיים להשכרה ומכירה, עם ניסיון רב ואמינות משנת 2008. צוות מקצועי שעובד למענכם בלב אזורי הביקוש.
             </p>
           </motion.div>
 
@@ -41,15 +41,15 @@ export default function Footer() {
             className="text-right flex flex-col gap-4"
           >
             <div className="flex items-center justify-end gap-3 text-white/80 hover:text-white transition-colors">
-              <span className="text-lg" dir="ltr">050-5697969</span>
+              <span className="text-lg" dir="ltr">052-3402559</span>
               <Phone className="w-5 h-5 text-accent" />
             </div>
-            <a href="mailto:allon@society4u.co.il" className="flex items-center justify-end gap-3 text-white/80 hover:text-white transition-colors">
-              <span className="text-lg">allon@society4u.co.il</span>
+            <a href="mailto:shauliyacobson@gmail.com" className="flex items-center justify-end gap-3 text-white/80 hover:text-white transition-colors">
+              <span className="text-lg">shauliyacobson@gmail.com</span>
               <Mail className="w-5 h-5 text-accent" />
             </a>
             <div className="flex items-center justify-end gap-3 text-white/80 hover:text-white transition-colors">
-              <span className="text-lg">דיזנגוף 214, תל אביב</span>
+              <span className="text-lg">החשמונאים 96, תל אביב</span>
               <MapPin className="w-5 h-5 text-accent" />
             </div>
           </motion.div>
@@ -58,7 +58,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="relative z-10 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
           <div className="text-2xl font-bold text-white tracking-tight">
-            <img src="https://society4u.co.il/RealEstate/assets/images/header.svg" alt="סוסייטי נכסים" className="h-8 object-contain" />
+            יעקובסון נכסים
           </div>
 
           <div className="flex gap-6 text-sm text-white/60">
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
 
           <div className="text-sm text-white/40">
-            &copy; {new Date().getFullYear()} כל הזכויות שמורות לסוסייטי נכסים.
+            &copy; {new Date().getFullYear()} כל הזכויות שמורות ליעקובסון נכסים.
           </div>
         </div>
       </div>

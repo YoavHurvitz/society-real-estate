@@ -35,12 +35,12 @@ export default function App() {
         <Properties />
         <Services />
         <WhyUs />
-        <CTAForm id="contact" />
+        <CTAForm />
         <AboutUs />
         <Reviews />
         <Team />
         <Blog />
-        <CTAForm />
+        <CTAForm title="הגיע הזמן להתקדם לנכס הבא שלכם." subtitle="צוות המומחים שלנו כאן לשירותכם בכל שאלה או לתיאום פגישה אישית." />
         <FAQ />
         <Footer />
       </Suspense>
@@ -53,7 +53,7 @@ export default function App() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.4 }}
-            href="https://wa.me/972505697969?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%9F%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%A0%D7%9B%D7%A1%D7%99%D7%9D"
+            href="https://wa.me/972500000000?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%9F%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%A0%D7%9B%D7%A1%D7%99%D7%9D"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-[#20bd5a] transition-colors duration-300 cursor-pointer flex items-center justify-center"
