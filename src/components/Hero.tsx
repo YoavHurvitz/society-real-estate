@@ -63,23 +63,9 @@ export default function Hero() {
         <motion.div
           className="max-w-4xl flex flex-col gap-6 md:gap-8 items-center text-center mx-auto"
         >
-          <motion.h1
-            initial={{ opacity: 0, y: 30, textShadow: "0px 0px 0px rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0)" }}
-            animate={{ opacity: 1, y: 0, textShadow: "0px 0px 40px rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.3)" }}
-            transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.15] md:leading-[1.1] tracking-tight drop-shadow-lg"
-          >
-            הבית הבא <br className="hidden md:block" /> שלכם מתחיל <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-[#4CAF50]">כאן</span>
-          </motion.h1>
+          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }} className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.15] md:leading-[1.1] tracking-tight drop-shadow-lg">הדרך היעילה <br className="hidden md:block"/> לשיווק <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-[#f4a261]">דירתך בת"א</span></motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
-            className="text-lg md:text-xl text-gray-200 max-w-2xl font-normal drop-shadow-md leading-relaxed md:leading-relaxed"
-          >
-            סוסייטי נכסים – משרד התיווך המוביל בתל אביב. עם למעלה מ-40 שנות מצוינות, אמינות וליווי אישי, אנחנו כאן כדי למצוא עבורכם את הנכס המושלם במרכז וצפון העיר.
-          </motion.p>
+          <motion.p initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }} className="text-lg md:text-xl text-gray-200 max-w-2xl font-normal drop-shadow-md leading-relaxed md:leading-relaxed">ייעוץ מקצועי וליווי למכירה, השכרה ונכסי יוקרה בלב תל אביב. מאות לקוחות שממליצים בכל שנה.</motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}

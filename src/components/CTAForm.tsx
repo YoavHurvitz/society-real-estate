@@ -46,7 +46,7 @@ export default function CTAForm({
           transition={{ duration: 0.4, ease: "easeOut" }}
           className="text-center mb-8 md:mb-10"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight drop-shadow-sm">{title}</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight leading-tight">רוצים לשווק את דירתכם ביעילות?</h2>
           <p className="mt-3 text-white/80 font-medium md:text-lg">{subtitle}</p>
         </motion.div>
 
