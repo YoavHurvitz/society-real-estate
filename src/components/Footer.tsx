@@ -29,7 +29,7 @@ export default function Footer() {
               תיווך ויזום נדל״ן <br /> בתל אביב והסביבה
             </h2>
             <p className="text-white/70 text-lg max-w-md">
-              משרד יעקובסון נכסים משווק נכסים פרטיים להשכרה ומכירה, עם ניסיון רב ואמינות משנת 2008. צוות מקצועי שעובד למענכם בלב אזורי הביקוש.
+              משרד סוסייטי נכסים משווק נכסים פרטיים להשכרה ומכירה, עם ניסיון רב ואמינות ודירוגים מובילים. צוות מקצועי שעובד למענכם בלב אזורי הביקוש.
             </p>
           </motion.div>
 
@@ -58,7 +58,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="relative z-10 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
           <div className="text-2xl font-bold text-white tracking-tight">
-            יעקובסון נכסים
+            סוסייטי נכסים
           </div>
 
           <div className="flex gap-6 text-sm text-white/60">
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
 
           <div className="text-sm text-white/40">
-            &copy; {new Date().getFullYear()} כל הזכויות שמורות ליעקובסון נכסים.
+            &copy; {new Date().getFullYear()} כל הזכויות שמורות לסוסייטי נכסים.
           </div>
         </div>
       </div>
