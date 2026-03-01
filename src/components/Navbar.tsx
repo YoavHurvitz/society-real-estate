@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 
@@ -14,6 +14,8 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const isClickScrolling = useRef(false);
+  const clickScrollTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,7 +30,7 @@ export default function Navbar() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && !isClickScrolling.current) {
             setActiveSection(entry.target.id);
           }
         });
@@ -47,11 +49,27 @@ export default function Navbar() {
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setIsMobileMenuOpen(false);
-    const element = document.getElementById(href.substring(1));
+    const targetId = href.substring(1);
+    setActiveSection(targetId);
+
+    // Temporarily disable the intersection observer's effect on active section
+    isClickScrolling.current = true;
+    if (clickScrollTimeout.current) clearTimeout(clickScrollTimeout.current);
+    clickScrollTimeout.current = setTimeout(() => {
+      isClickScrolling.current = false;
+    }, 1000);
+
+    const element = document.getElementById(targetId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  useEffect(() => {
+    return () => {
+      if (clickScrollTimeout.current) clearTimeout(clickScrollTimeout.current);
+    };
+  }, []);
 
   return (
     <>
@@ -95,8 +113,8 @@ export default function Navbar() {
         </div>
 
         <div className="flex-1 flex items-center justify-end gap-4 shrink-0">
-          <div className={`z-50 ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-            <img src="https://society4u.co.il/RealEstate/assets/images/header.svg" alt="סוסייטי נכסים" className="h-8 md:h-10 object-contain" />
+          <div className={`text-2xl md:text-3xl font-bold tracking-tight z-50 ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
+            יעקובסון נכסים
           </div>
         </div>
       </motion.nav>
@@ -118,7 +136,9 @@ export default function Navbar() {
               className="absolute top-4 left-4 right-4 bg-white rounded-3xl p-6 shadow-2xl flex flex-col"
             >
               <div className="flex justify-between items-center mb-8">
-                <img src="https://society4u.co.il/RealEstate/assets/images/header.svg" alt="סוסייטי נכסים" className="h-8 md:h-10 object-contain" />
+                <div className="text-2xl font-bold text-gray-900 tracking-tight">
+                  יעקובסון נכסים
+                </div>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-gray-200 transition-colors cursor-pointer"
