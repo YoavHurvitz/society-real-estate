@@ -119,7 +119,7 @@ export default function Blog() {
                             </p>
                         </div>
                         <a
-                            href="https://wa.me/972523402559?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%93%D7%A8%D7%99%D7%9A%20%D7%94%D7%97%D7%99%D7%A0%D7%9E%D7%99%20%D7%9C%D7%9E%D7%95%D7%9B%D7%A8"
+                            href="https://wa.me/97250-569-7969?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%93%D7%A8%D7%99%D7%9A%20%D7%94%D7%97%D7%99%D7%A0%D7%9E%D7%99%20%D7%9C%D7%9E%D7%95%D7%9B%D7%A8"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full md:w-auto bg-white text-gray-900 px-8 py-4 rounded-full font-bold text-lg text-center hover:bg-gray-100 hover:shadow-[0_0_25px_rgba(255,255,255,0.2)] transition-all duration-300 cursor-pointer shrink-0"

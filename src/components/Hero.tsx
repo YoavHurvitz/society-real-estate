@@ -74,7 +74,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-2 w-full"
           >
             <a
-              href="https://wa.me/972505697969?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%9F%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%A0%D7%9B%D7%A1%D7%99%D7%9D"
+              href="https://wa.me/97250-569-7969?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%9F%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%A0%D7%9B%D7%A1%D7%99%D7%9D"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-accent text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-3 hover:bg-accent-hover transition-all active:scale-95 shadow-xl shadow-accent/30 group w-full sm:w-auto cursor-pointer"
